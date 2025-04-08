@@ -52,6 +52,9 @@ header {
 .header-icon img {
   height: 3.75rem;
   width: 3.1rem;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .header-menu {
@@ -61,6 +64,9 @@ header {
   margin-right: 0;
   vertical-align: middle;
   height: 2.87rem;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .header-menu div {
@@ -93,7 +99,7 @@ header {
 
 .first-layout-content {
   display: flex;
-  align-items: flex-start;   /* Align items at the top */
+  align-items: flex-start; /* Align items at the top */
   justify-content: space-between;
 }
 
@@ -126,28 +132,31 @@ header {
   font-weight: 800;
 }
 
-.first-layout-content img{
+.first-layout-content img {
   right: 0;
   bottom: 0;
   width: 40%;
   width: auto;
   height: auto;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-.personal-links{
+.personal-links {
   display: flex;
   align-items: flex-start;
   gap: 1.938rem;
   margin-top: 7.875rem;
 }
 
-.personal-links a{
+.personal-links a {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 3.813rem;
   height: 3.5rem;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   border: none;
   outline: none;
   cursor: pointer;
