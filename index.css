@@ -11,6 +11,13 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .first-layout {
@@ -52,9 +59,6 @@ header {
 .header-icon img {
   height: 3.75rem;
   width: 3.1rem;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 .header-menu {
@@ -138,9 +142,6 @@ header {
   width: 40%;
   width: auto;
   height: auto;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 .personal-links {
@@ -165,6 +166,10 @@ header {
 
 /* Second Layout Styles */
 .second-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: auto;
   background: radial-gradient(
@@ -172,9 +177,10 @@ header {
     rgba(26, 21, 21, 0) 0%,
     rgba(1, 1, 1, 0.16) 100%
   );
+  padding-bottom: 10.125rem;
 }
 
-.about-me-section {
+.section-label {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,7 +190,7 @@ header {
   padding-top: 8.875rem;
 }
 
-.about-me-section .about-me-label {
+.section-label .title-label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -248,9 +254,6 @@ header {
 
 .about-me-skills-col img {
   position: absolute;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
   left: 0;
   top: 0;
   transform: translate(-30%, -10%);
@@ -267,4 +270,48 @@ header {
   font-size: 0.875rem;
   font-weight: 100;
   max-width: 64ch;
+}
+
+/*  Skills Content Section  */
+#skills-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6.375rem;
+  width: auto;
+  height: auto;
+  margin: 5rem auto 0 auto;
+}
+
+.skills-content-title {
+  font-size: 1.875rem;
+  line-height: 4.625rem;
+  font-weight: 700;
+}
+
+.skills-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 4.75rem;
+  gap: 4rem 4.625rem;
+  max-width: 62.75rem;
+}
+
+.skills-content-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 calc(25% - 4rem);
+}
+
+.skills-content-item img {
+  width: auto;
+}
+
+.skills-content-item p {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  line-height: 3.25rem;
+  text-transform: uppercase;
 }
