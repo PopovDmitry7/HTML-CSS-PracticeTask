@@ -222,22 +222,49 @@ header {
 
 .about-me-skills {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 6.75rem;
+  max-width: 66.625rem;
+  margin: 6.75rem auto 0 auto;
+  gap: 4rem;
 }
 
-.about-me-skills-content {
-  flex-grow: 1;
+.about-me-skills-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4.25rem;
 }
 
-.about-me-skill-title img{
-  position:absolute;
-  z-index:0;
+.about-me-skills-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  position: relative;
+  padding-left: 2rem;
 }
 
-.about-me-skill-title h2{
+.about-me-skills-col img {
+  position: absolute;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  left: 0;
+  top: 0;
+  transform: translate(-30%, -10%);
+}
+
+.about-me-skill-text h2 {
   letter-spacing: 0.256rem;
   text-transform: uppercase;
+  line-height: 4rem;
+}
+
+.about-me-skill-text p {
+  font-family: sans-serif;
+  font-size: 0.875rem;
+  font-weight: 100;
+  max-width: 64ch;
 }
